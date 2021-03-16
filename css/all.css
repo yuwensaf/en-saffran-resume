@@ -11,6 +11,10 @@ img {
 body {
   font-family: "Open Sans", sans-serif !important;
 }
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 .wrapper {
   max-width: 100%;
 }
@@ -49,7 +53,7 @@ body {
       rgba(154, 129, 148, 0.7),
       rgba(154, 129, 148, 0.7)
     ),
-    url(../img/hero-image.png);
+    url(../img/min-film-hero-image.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -68,6 +72,12 @@ body {
   .navbar,
   .navbar-collapse {
     background-color: rgba(27, 35, 47);
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
   }
 }
 .navbar button:focus {
