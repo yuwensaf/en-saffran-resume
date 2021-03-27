@@ -1,0 +1,89 @@
+/* CONTACT */
+.contact-section {
+  background-color: $dark;
+  min-height: 100vh;
+}
+.contact-main {
+  color: $info;
+}
+.contact-main row {
+  max-width: 100%;
+}
+.contact-photo {
+  width: 250px;
+  margin: 0 auto 40px auto;
+}
+.contact-photo img {
+  border-radius: 50%;
+  width: 250px;
+}
+.contact-text-section {
+  padding-top: 50px;
+}
+.contact-text {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+@include sm {
+  .contact-text-section {
+    text-align: left;
+  }
+  .contact-text {
+    justify-content: start;
+  }
+}
+.contact-text-b {
+  padding-top: 50px;
+  font-size: 30px;
+}
+@include pad {
+  .contact-text-b {
+    font-size: 25px;
+  }
+}
+@include iphone6 {
+  .contact-text-b {
+    font-size: 20px;
+  }
+}
+@include iphone5 {
+  .contact-text-b {
+    font-size: 16px;
+  }
+}
+.contact-text i {
+  padding: 5px 7px 0px 0px;
+  font-size: 24px;
+}
+
+/* email */
+.contact-text a {
+  color: $info;
+  text-decoration: none;
+}
+.contact-text a:hover {
+  color: #e3f4f3;
+  text-decoration: none;
+}
+
+/* social-icon */
+.social-icon a {
+  display: block;
+  min-width: 50px;
+  max-height: 50px;
+  border: 1px solid $light;
+  border-radius: 50%;
+  margin: 0 20px;
+  line-height: 50px;
+  font-size: 25px;
+  color: $dark;
+  background-color: $light;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.social-icon a:hover {
+  text-decoration: none;
+  color: $light;
+  background-color: $info;
+  border: 1px solid $info;
+}

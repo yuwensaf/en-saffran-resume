@@ -1,0 +1,140 @@
+/* banner */
+#banner-container {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(154, 129, 148, 0.7),
+      rgba(154, 129, 148, 0.7)
+    ),
+    url(../img/min-film-hero-image.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.navbar {
+  z-index: 10;
+  height: 70px;
+  background-color: transparent;
+  transition: all 0.1s;
+  color: $light;
+}
+.navbar-collapse.show {
+  transition: all 0.3s;
+}
+@include pad {
+  .navbar,
+  .navbar-collapse {
+    background-color: rgba(27, 35, 47, 1);
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+  }
+}
+.navbar button:focus {
+  outline: none;
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: $info;
+}
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.9);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: $info;
+}
+.logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.navbar-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar-logo a {
+  background-image: url(../img/saffran-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.navbar-nav .nav-item {
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-link {
+  font-family: "Open Sans", arial, sans-serif;
+}
+.banner-intro-b {
+  padding-top: 30px;
+}
+.banner-intro-b h1 {
+  font-size: 165px;
+  line-height: 150px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.banner-intro-b h1:nth-of-type(1),
+.banner-intro-b h1:nth-of-type(2) {
+  color: $light;
+}
+@include pad {
+  .banner-intro-b {
+    margin-bottom: 30px;
+  }
+  .banner-intro-b h1 {
+    font-size: 145px;
+    line-height: 140px;
+  }
+}
+@include sm {
+  .banner-intro-b h1 {
+    font-size: 125px;
+    line-height: 130px;
+  }
+}
+@include iphone6 {
+  .banner-intro-b h1 {
+    font-size: 85px;
+    line-height: 100px;
+  }
+}
+@include iphone5 {
+  .banner-intro-b h1 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+}
+.banner-intro_name {
+  color: $info;
+}
+.banner-intro-s {
+  display: flex;
+  align-items: center;
+}
+.banner-text_content {
+  line-height: 28px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+  font-size: 25px;
+  color: rgba(255, 253, 253, 1);
+}
+.banner-text_content span {
+  color: #ffc478;
+}

@@ -29,10 +29,10 @@ $(document).ready(function () {
     // 一定要先寫這個 if
     if (scrollPos + 88 >= bannerHeight) {
       $(".navbar").css({
-        "background-color": "rgba(27, 35, 47)",
+        "background-color": "#1b232f",
         position: "fixed",
         width: "100%",
-        "border-bottom": "3px solid #51dacf",
+        "border-bottom": "3px solid #51d2cf",
       });
     } else {
       $(".navbar").css({
