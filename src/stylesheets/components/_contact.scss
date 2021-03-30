@@ -10,47 +10,51 @@
   max-width: 100%;
 }
 .contact-photo {
-  width: 250px;
+  width: 100%;
   margin: 0 auto 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-photo img {
   border-radius: 50%;
   width: 250px;
+  @include iphone6 {
+    width: 150px;
+  }
 }
 .contact-text-section {
   padding-top: 50px;
+  @include sm {
+    text-align: left;
+  }
 }
 .contact-text {
   font-size: 20px;
   margin-bottom: 5px;
-}
-@include sm {
-  .contact-text-section {
-    text-align: left;
+  @include sm {
+    font-size: 18px;
   }
-  .contact-text {
+  @include iphone6 {
     justify-content: start;
+    font-size: 15px;
   }
 }
+
 .contact-text-b {
   padding-top: 50px;
-  font-size: 30px;
-}
-@include pad {
-  .contact-text-b {
-    font-size: 25px;
+  font-size: 28px;
+  @include pad {
+    font-size: 24px;
+  }
+  @include iphone6 {
+    font-size: 18px;
+  }
+  @include iphone5 {
+    font-size: 15px;
   }
 }
-@include iphone6 {
-  .contact-text-b {
-    font-size: 20px;
-  }
-}
-@include iphone5 {
-  .contact-text-b {
-    font-size: 16px;
-  }
-}
+
 .contact-text i {
   padding: 5px 7px 0px 0px;
   font-size: 24px;
@@ -80,6 +84,9 @@
   background-color: $light;
   text-decoration: none;
   transition: all 0.3s;
+  @include iphone6 {
+    margin: 0 10px;
+  }
 }
 .social-icon a:hover {
   text-decoration: none;

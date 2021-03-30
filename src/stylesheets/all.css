@@ -10889,7 +10889,7 @@ body {
 }
 
 .l-section {
-  padding: 0 30px 140px 30px;
+  padding: 0 30px 80px 30px;
 }
 
 .animated {
@@ -11005,8 +11005,60 @@ body {
   font-family: "Open Sans", arial, sans-serif;
 }
 
+.banner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 30px 80px 30px;
+}
+
+@media (max-width: 1200px) {
+  .banner-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-row {
+    padding: 10px 10px 60px 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner-col {
+    width: 80%;
+  }
+}
+
 .banner-intro-b {
   padding-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .banner-intro-b {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-intro-b {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 374px) {
+  .banner-intro-b {
+    margin-bottom: 25px;
+  }
 }
 
 .banner-intro-b h1 {
@@ -11016,18 +11068,10 @@ body {
   letter-spacing: 2px;
 }
 
-.banner-intro-b h1:nth-of-type(1),
-.banner-intro-b h1:nth-of-type(2) {
-  color: #ffffff;
-}
-
-@media (max-width: 992px) {
-  .banner-intro-b {
-    margin-bottom: 30px;
-  }
+@media (max-width: 1200px) {
   .banner-intro-b h1 {
     font-size: 145px;
-    line-height: 140px;
+    line-height: 160px;
   }
 }
 
@@ -11040,16 +11084,21 @@ body {
 
 @media (max-width: 576px) {
   .banner-intro-b h1 {
-    font-size: 85px;
-    line-height: 100px;
+    font-size: 75px;
+    line-height: 80px;
   }
 }
 
 @media (max-width: 374px) {
   .banner-intro-b h1 {
-    font-size: 65px;
-    line-height: 80px;
+    font-size: 55px;
+    line-height: 50px;
   }
+}
+
+.banner-intro-b h1:nth-of-type(1),
+.banner-intro-b h1:nth-of-type(2) {
+  color: #ffffff;
 }
 
 .banner-intro_name {
@@ -11071,6 +11120,12 @@ body {
   font-weight: 300;
   font-size: 25px;
   color: #fffdfd;
+}
+
+@media (max-width: 576px) {
+  .banner-text_content {
+    font-size: 20px;
+  }
 }
 
 .banner-text_content span {
@@ -11484,8 +11539,17 @@ body {
 }
 
 .contact-photo {
-  width: 250px;
+  width: 100%;
   margin: 0 auto 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-photo img {
@@ -11493,8 +11557,20 @@ body {
   width: 250px;
 }
 
+@media (max-width: 576px) {
+  .contact-photo img {
+    width: 150px;
+  }
+}
+
 .contact-text-section {
   padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .contact-text-section {
+    text-align: left;
+  }
 }
 
 .contact-text {
@@ -11503,36 +11579,40 @@ body {
 }
 
 @media (max-width: 768px) {
-  .contact-text-section {
-    text-align: left;
+  .contact-text {
+    font-size: 18px;
   }
+}
+
+@media (max-width: 576px) {
   .contact-text {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    font-size: 15px;
   }
 }
 
 .contact-text-b {
   padding-top: 50px;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 @media (max-width: 992px) {
   .contact-text-b {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 576px) {
   .contact-text-b {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 374px) {
   .contact-text-b {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -11567,6 +11647,12 @@ body {
   text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media (max-width: 576px) {
+  .social-icon a {
+    margin: 0 10px;
+  }
 }
 
 .social-icon a:hover {
