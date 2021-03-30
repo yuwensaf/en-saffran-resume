@@ -11018,7 +11018,13 @@ body {
   padding: 60px 30px 80px 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
+  .banner-row {
+    padding: 10px 30px 80px 30px;
+  }
+}
+
+@media (max-width: 576px) {
   .banner-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11027,10 +11033,9 @@ body {
   }
 }
 
-@media (max-width: 576px) {
-  .banner-row {
-    padding: 10px 10px 60px 10px;
-  }
+.banner-col {
+  width: 40%;
+  margin: 0 5px;
 }
 
 @media (max-width: 1200px) {
@@ -11068,31 +11073,22 @@ body {
   letter-spacing: 2px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .banner-intro-b h1 {
-    font-size: 145px;
-    line-height: 160px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner-intro-b h1 {
-    font-size: 125px;
-    line-height: 130px;
+    font-size: 70px;
+    line-height: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .banner-intro-b h1 {
-    font-size: 75px;
-    line-height: 80px;
+    font-size: 65px;
   }
 }
 
 @media (max-width: 374px) {
   .banner-intro-b h1 {
     font-size: 55px;
-    line-height: 50px;
   }
 }
 
@@ -11114,17 +11110,24 @@ body {
           align-items: center;
 }
 
+@media (max-width: 576px) {
+  .banner-intro-s {
+    display: none;
+  }
+}
+
 .banner-text_content {
-  line-height: 28px;
+  line-height: 32px;
   font-family: "Inconsolata", monospace;
   font-weight: 300;
   font-size: 25px;
   color: #fffdfd;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .banner-text_content {
     font-size: 20px;
+    line-height: 28px;
   }
 }
 
